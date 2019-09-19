@@ -23,10 +23,11 @@
 		      //   enable: true,
 		      // },
 		    });
+            OneSignal.on('notificationDisplay', function(event) {
+                console.log('OneSignal notification displayed:', event);
+            });
 		  });
-		OneSignal.on('notificationDisplay', function(event) {
-   			 console.log('OneSignal notification displayed:', event);
-		 });
+		
 		</script>
     </head>
     <body>
