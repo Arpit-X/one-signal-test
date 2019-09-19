@@ -23,9 +23,6 @@
 		      //   enable: true,
 		      // },
 		    });
-             OneSignal.registerForPushNotifications({
-                 modalPrompt: true
-            });
             OneSignal.on('notificationDisplay', function(event) {
                 console.log('OneSignal notification displayed:', event);
             });
